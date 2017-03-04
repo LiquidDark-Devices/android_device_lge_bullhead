@@ -470,9 +470,9 @@ PRODUCT_COPY_FILES += \
     device/lge/bullhead/init.bullhead.misc.rc.user:root/init.bullhead.misc.rc
 endif
 
-# only include verity on user builds for LineageOS
+# no verity on user builds
 ifeq ($(TARGET_BUILD_VARIANT),user)
-   PRODUCT_COPY_FILES += device/lge/bullhead/fstab-verity.bullhead:root/fstab.bullhead
+   PRODUCT_COPY_FILES += device/lge/bullhead/fstab.bullhead:root/fstab.bullhead
 
 # setup dm-verity configs.
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/system
