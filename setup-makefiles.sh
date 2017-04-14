@@ -17,6 +17,11 @@
 
 set -e
 
+<<<<<<< HEAD
+=======
+INITIAL_COPYRIGHT_YEAR=2015
+
+>>>>>>> 576a6f9... Merge branch 'aosp/nougat-mr2-release' into cm-14.1
 # Required!
 VENDOR=lge
 DEVICE=bullhead
